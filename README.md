@@ -1,1 +1,1 @@
-Exosite Labs github webpage
+Exosite Garage github webpage
