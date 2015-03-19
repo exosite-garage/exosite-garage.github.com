@@ -7,130 +7,184 @@
   <meta name="author" content="Exosite" />
   <meta name="description" content="Overview of Exosite Garage organization and repositories." />
   <meta name="keywords" content="exosite,exosite-garage,cloud,api,m2m,devices,remote,wireless,monitoring" />
-
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
+<div id="top-navbar-container" class="container">
+  <div id="top-navbar" class="container">
+    <ul id="top-navbar-links">
+      <li><a href="https://account.exosite.com/login">Start</a></li>
+      <li><a href="http://docs.exosite.com">Documentation</a></li>
+      <li><a href="https://support.exosite.com">Support</a></li>
+      <li><a href="https://exosite-labs.github.io/">Libraries</a></li>
+      <li><a href="https://status.exosite.com/">Service-Status</a></li>
+    </ul>
+  </div>
+</div>
 <div class="site">
   <div class="header">
     <div class="leftcol">
-      <h1><a href="http://github.com/exosite-garage">
-        <img src="images/project_icon_outline.png" alt="Exosite Garage Icon"/>
-        Exosite Garage
-      </a></h1>
+      <img src="images/exosite_logo_50px.png" alt="Exosite Garage Icon"/></img>
+      <h1>Exosite Open Projects Garage</h1>
     </div>
     <div class="overview">
-      Exosite Garage is a github organization that we use to post example projects (listed below) 
+      <p>Exosite Garage is a github organization that we use to post example projects (listed below) 
       that use Exosite's online services. These projects run on different types of hardware and 
       implement a variety of use cases. Many of the projects are not production 
       ready, but are meant to serve as a starting point 
       to help developers get going.
+      </p>
+      <a href="http://github.com/exosite-garage">Direct GitHub Repositories</a>
     </div>
   </div>
   <div class="content">
-    
-    <h2>Embedded and Development Kits</h2>
-    Projects that connect embedded systems and processor development kits to the cloud.
+    <h2>Portals / Web Application</h2>
     <ul>
-      <li><a href="https://github.com/exosite-garage/stellaris_atdt_cloud">Texas Instruments Stellaris Cellular Communications</a> - Projects that connect EK-LM3S6965, EK-LM3S1968 & RDK-IDM-L35 to the cloud via Janus Terminus T2 GPRS cellular modem.</li>
-      <li><a href="https://github.com/exosite-garage/micrium_gnurx_cloud">Renesas RX62N RDK Micrium</a> - Five Micrium uCOSIII projects that connect RDK peripherals to the cloud and use OEM provisioning to initialize connectivity.</li>
-      <li><a href="https://github.com/exosite-garage/uip_rx62n_cloud">Renesas RX62N RDK Renesas Code Base</a> - uIP networking stack project that sends potentiometer data and receives LED control commands to/from the cloud.</li>
-      <li><a href="https://github.com/exosite-garage/rx62n_pmod_cloud">Renesas RX62N RDK PMOD</a> - uIP networking stack project that sends PMOD data to the cloud.</li>
-      <li><a href="https://github.com/exosite-garage/micrium_hewrx_rx63n_cloud">Renesas RX63N RDK Micrium</a> - A Micrium project that connects RDK peripherals to the cloud and uses OEM provisioning to initialize connectivity.</li>
-      <li><a href="https://github.com/exosite-garage/gs_rl78_cloud">Renesas RL78G13 RDK with GainSpan WiFi module</a> - Connects an YRDKRL78G13 with GainSpan GS1011M WiFi module to the cloud, enabling the device to send on-board sensor data and submit/receive LED controls.</li>
-      <li><a href="https://github.com/exosite-garage/rl78g14_gs_cloud">Renesas RL78G14 RDK with GainSpan WiFi module</a> - Connects an YRDKRL78G14 with on board GainSpan GS1011M WiFi module to the cloud, enabling the device to send on-board sensor data and submit/receive LED controls.</li>
-      <li><a href="https://github.com/exosite-garage/gateway_core"> Gateway_Core</a> - Exosite One platform gateway application runs on the Linux box.</li>
-      <li><a href="https://github.com/exosite-garage/msp430_cc3000_smartconfig">TI MSP-EXP430FR5739 with CC3000 Smart Config</a> - Connects a MSP-EXP430FR5739 with TI CC3000 WiFi module to the cloud, enabling the device to send on-board sensor data and submit/receive LED controls.</li>
-      <li><a href="https://github.com/exosite-garage/mcp_dv102412_cloud">Microchip DV102412 </a> - Connects a Microchip DV102412 WiFi module to the cloud, enabling the device to send on-board button hold time data and receive LED controls.</li>
-    </ul>
-    Helper apps
-     <ul>
-      <li><a href="https://github.com/exosite-garage/rx62n_rdk_flashtool">Renesas RX62N RDK flash tool</a> - Simple flash tool to recover the MAC address and default Exosite cloud settings.</li>
-    </ul>   
-    <h2>Arduino Compatible</h2>
-    Projects that run on Arduino (or Arduino-like) hardware.
+      <li><a href="https://github.com/exosite-garage/custom_widget_scripts">Example Portals Custom Widgets</a>
+        </br><div class ="projectoverview">JavaScript code to be used in Portal's custom widgets, that uses user's data from the cloud to represent it in a number of different ways.</div></li>
+    </ul> 
+
+    <h2>One Platform Scripting Engine</h2>
     <ul>
-      <li><a href="https://github.com/exosite-garage/arduino_http_post">Arduino HTTP POST</a> - Super simple code using Arduino to report to the cloud via Exosite.</li>
-      <li><a href="https://github.com/exosite-garage/fluid_simple_cloud">Fluid Simple Cloud</a> - Uses a Fluid board and the Arduino Exosite library to read/write data via Exosite.</li>
-      <li><a href="https://github.com/exosite-garage/arduino_exosite_library">Arduino Exosite Library</a> - Puts the Arduino Exosite Library into Arduino IDE to allow for easy cloud access.</li>
-      <li><a href="https://github.com/exosite-garage/Arduino-Foosball">Arduino-Foosball</a> - Uses a Arduino Uno with Ethernet shield to create a web-enabled Foosball table.</li>
-      <li><a href="https://github.com/exosite-garage/chipkit_wifi_cloud">chipKIT WiFi Cloud</a> - Uses a chipKIT uC32 with WiFi shield and Exosite library to report to the cloud via Exosite.</li>
+      <li><a href="https://github.com/exosite-garage/PlatformScripts">Example One Platform Scripts</a>
+        </br><div class ="projectoverview">Lua scripts that can be run in the Exosite One Platform to analyze data, send out alerts, push data to other services, and more</div></li>
     </ul>
-    <h2>Wireless</h2>
-    Projects that run on, or interact with, wireless sensor nodes.
+
+    <h2>Utilities / Services</h2>
     <ul>
-      <li><a href="https://github.com/exosite-garage/exompp-synapse">Synapse Power Meter</a> - Uses Synapse Portal + Wireless node to measure AC power and logs to Exosite.</li>
-      <li><a href="https://github.com/exosite-garage/synapse_nodes">Synapse Nodes</a> - Synapse remote and master node python scripts for creating cloud-connected wireless mesh networks.</li>
-      <li><a href="https://github.com/exosite-garage/pc_chronos_gateway">PC Chronos Gateway</a> - Runs on a PC and monitors a Texas Instruments Chronos watch via a CC1111 USB AP.  Logs accelerometer and button data to Exosite.</li>
-      <li><a href="https://github.com/exosite-garage/cc1111_chronos_uartgw">CC1111 Chronos Gateway</a> - Firmware for a CC1111 chip that monitors a Chronos watch RF link and sends data out over CC1111 UART.</li>
-      <li><a href="https://github.com/exosite-garage/janus_http_gateway">Janus HTTP Gateway</a> - Python code that runs in a Telit cell (GSM) chip on a Janus gateway to send UART data to Exosite.</li>
+      <li><a href="https://github.com/exosite-garage/archive_data">Archive Data</a>
+        </br><div class ="projectoverview">Python app that archives data in date range to a .csv file.  Download data from the cloud.</div></li>
     </ul>
-    <h2>Chat</h2>
-    Projects that use XMPP to chat with other cloud resources.
-    <ul>
-      <li><a href="https://github.com/exosite-garage/xmpp_hello">XMPP Hello</a> - PC app that uses XMPP chat to send "hello world" chat message to Exosite.</li>
-      <li><a href="https://github.com/exosite-garage/pc_xmpp_cpumon">PC XMPP CPU Monitor</a> - Monitors a PC's CPU activity and logs to Exosite using XMPP chat messages.</li>
-    </ul>
+
    <h2>Smartphone App</h2>
     Projects that run on the smartphone
     <ul>
-      <li><a href="https://github.com/exosite-garage/iOSExample">iOS Example</a> - Demonstration of interacting with the One Platform from an iOS app.</li>
-    </ul>    
-    <h2>PC Apps</h2>
-    Projects that run on a PC.
+      <li><a href="https://github.com/exosite-garage/iOSExample">iOS Example</a>
+      </br><div class ="projectoverview">Demonstration of interacting with the One Platform from an iOS app.</div></li>
+      <li><a href="https://github.com/exosite-garage/AndroidThermostat">Android Thermostat Example</a>
+      </br><div class ="projectoverview">Example Android application for accessing One Platform RPC and Portals APIs.</div></li>
+      <li><a href="https://github.com/exosite-garage/AndroidPortals">Android Portals Example</a>
+      </br><div class ="projectoverview">Android example with Portals user login.</div></li>
+
+    </ul> 
+
+    <h2>Embedded and Development Kits</h2>
+    <div class="projectoverview">Projects that connect embedded systems and processor development kits to the cloud.</div>
+    <h3>General Use</h3>
+      <ul>
+        <li><a href="https://github.com/exosite-garage/PicoCoAP">PicoCoAP</a>
+        </br><div class ="projectoverview">PicoCoAP is a very minimal CoAP library written in C.</div></li>
+        <li><a href="https://github.com/exosite-garage/CoAPExample">CoAPExample</a>
+        </br><div class ="projectoverview">Simple example using CoAP library written in python.</div></li>
+      </ul> 
+      
+    <h3>Texas Instruments</h3>
+      <ul>
+       <li><a href="https://github.com/exosite-garage/CC3200CloudDemo">TI CC32000 LaunchPad Cloud Demo</a> 
+       </br><div class ="projectoverview">Example application for use on the CC3200 LaunchPad and TI's SDK</div></li>
+       <li><a href="https://github.com/exosite-garage/clp_sensorhub_support">Connected LaunchPad SensorHub Project support</a> 
+        </br>
+        <div class ="projectoverview">To be used with the Connected LaunchPad's Sensor Hub project</div>
+        <li><a href="https://github.com/exosite-garage/msp430_cc3000_smartconfig">TI MSP430 with CC3000 Smart Config WiFi module</a> 
+        </br>
+        <div class ="projectoverview">Connects a MSP-EXP430FR5739 with TI CC3000 WiFi module to the cloud, enabling the device to send on-board sensor data and submit/receive LED controls.</div>
+        </li>
+        <li><a href="https://github.com/exosite-garage/stellaris_atdt_cloud">Stellaris Cellular Communications</a> 
+        </br><div class ="projectoverview">Projects that connect EK-LM3S6965, EK-LM3S1968 & RDK-IDM-L35 to the cloud via Janus Terminus T2 GPRS cellular modem.</div></li>
+      </ul>
+    <h3>Renesas</h3>
+      <ul>
+       <li><a href="https://github.com/exosite-garage/micrium_gnurx_cloud">RX62N RDK Micrium</a> 
+       </br><div class ="projectoverview">Five Micrium uCOSIII projects that connect RDK peripherals to the cloud and use OEM provisioning to initialize connectivity</div></li>
+        <li><a href="https://github.com/exosite-garage/uip_rx62n_cloud">RX62N RDK Renesas Code Base</a> 
+        </br><div class ="projectoverview">uIP networking stack project that sends potentiometer data and receives LED control commands to/from the cloud.</div></li>
+        <li><a href="https://github.com/exosite-garage/rx62n_pmod_cloud">RX62N RDK PMOD</a> 
+        </br><div class ="projectoverview">uIP networking stack project that sends PMOD data to the cloud.</div></li>
+        <li><a href="https://github.com/exosite-garage/micrium_hewrx_rx63n_cloud">RX63N RDK Micrium</a> 
+        </br><div class ="projectoverview">A Micrium project that connects RDK peripherals to the cloud and uses OEM provisioning to initialize connectivity.</div></li>
+        <li><a href="https://github.com/exosite-garage/gs_rl78_cloud">RL78G13 RDK with GainSpan WiFi module</a> 
+        </br><div class ="projectoverview">Connects an YRDKRL78G13 with GainSpan GS1011M WiFi module to the cloud, enabling the device to send on-board sensor data and submit/receive LED controls.</div></li>
+        <li><a href="https://github.com/exosite-garage/rl78g14_gs_cloud">RL78G14 RDK with GainSpan WiFi module</a> 
+        </br><div class ="projectoverview">Connects an YRDKRL78G14 with on board GainSpan GS1011M WiFi module to the cloud, enabling the device to send on-board sensor data and submit/receive LED controls.</div></li>
+      <li><a href="https://github.com/exosite-garage/rx62n_rdk_flashtool">RX62N RDK flash tool</a> 
+      </br><div class ="projectoverview">Simple flash tool to recover the MAC address and default Exosite cloud settings.</div></li>
+      </ul>
+    <h3>Microchip</h3>
+      <ul>
+        <li><a href="https://github.com/exosite-garage/mcp_dv102412_cloud">Microchip DV102412 </a> 
+        </br><div class ="projectoverview">Connects a Microchip DV102412 WiFi module to the cloud, enabling the device to send on-board button hold time data and receive LED controls.</div></li>
+        <li><a href="https://github.com/exosite-garage/chipkit_wifi_cloud">chipKIT WiFi Cloud</a> 
+        </br><div class ="projectoverview">Uses a chipKIT uC32 with WiFi shield and Exosite library to report to the cloud via Exosite.</div></li>
+      </ul>  
+    <h3>Arduino Compatible</h3>
+      <div class="projectoverview">Projects that run on Arduino (or Arduino-like) hardware.</div>
+      <ul>
+        <li><a href="https://github.com/exosite-garage/arduino_exosite_library">Arduino Exosite Library</a> 
+        </br><div class ="projectoverview">Puts the Arduino Exosite Library into Arduino IDE to allow for easy cloud access.</div></li>
+        <li><a href="https://github.com/exosite-garage/arduino_http_post">Arduino HTTP POST</a> 
+        </br><div class ="projectoverview">Super simple code using Arduino to report to the cloud via Exosite.</div></li>
+        <!-- <li><a href="https://github.com/exosite-garage/fluid_simple_cloud">Fluid Simple Cloud</a> </br>Uses a Fluid board and the Arduino Exosite library to read/write data via Exosite.</li> -->
+        <li><a href="https://github.com/exosite-garage/Arduino-Foosball">Arduino-Foosball</a> 
+        </br><div class ="projectoverview">Uses a Arduino Uno with Ethernet shield to create a web-enabled Foosball table.</div></li>
+      </ul>
+
+    <h3>Others</h3>
+      <ul>
+        <li><a href="https://github.com/exosite-garage/exompp-synapse">Synapse Wireless - Power Meter</a> 
+        </br><div class ="projectoverview">Uses Synapse Portal + Wireless node to measure AC power and logs to Exosite.</div></li>
+        <li><a href="https://github.com/exosite-garage/synapse_nodes">Synapse Wireless - Nodes</a> 
+        </br><div class ="projectoverview">Synapse remote and master node python scripts for creating cloud-connected wireless mesh networks.</div></li>
+        <li><a href="https://github.com/exosite-garage/gateway_core"> Gateway_Core</a> 
+        </br><div class ="projectoverview">Exosite One platform gateway application runs on the Linux box.</div></li>
+        <li><a href="https://github.com/exosite-garage/SparkCore-Exosite"> SparkCore - Exosite Demo</a> 
+        </br><div class ="projectoverview">Quickly and easily connect your Spark project to Exosite's Data Platform.</div></li>
+      </ul>
+<!--     Helper apps
+     <ul>
+    </ul>  -->  
+
+
+
+    <h2>Device Simulation / API Examples</h2>
     <ul>
-      <li><a href="https://github.com/exosite-garage/device_emulator">Device Emulator</a> - .NET GUI app that emulates device send/receive functionality.</li>
+      <li><a href="https://github.com/exosite-garage/utility_scripts">API Utility Scripts</a> - Python scripts demonstrating various use cases with the Exosite API</li>
+      <li><a href="https://github.com/exosite-garage/provision_examples">Device Provisioning and Management</a> - Python scripts demonstrating how to provision and manage devices with the Provision API.</li>
+      <li><a href="https://github.com/exosite-garage/udp_single_shot">UDP Write</a> - Python script that uses the UDP single shot API to write data.</li>
+      <li><a href="https://github.com/exosite-garage/device_emulator">Windows Device Emulator</a> - .NET GUI app that emulates device send/receive functionality.</li>
+    </ul>
+
+    <h2>Miscellaneous</h2>
+    <ul>
       <li><a href="https://github.com/exosite-garage/python_helloworld">Python Hello World</a> - Super simple python app that sends "hello world" to Exosite using the HTTP Data Interface.</li>
       <li><a href="https://github.com/exosite-garage/pc_serial_gateway">PC Serial Gateway</a> - Monitors a PC serial port for data and sends/receives data to/from Exosite based on the UART stream.</li>
       <li><a href="https://github.com/exosite-garage/pc_xmpp_cpumon">PC XMPP CPU Monitor</a> - Monitors a PC's CPU activity and logs to Exosite using XMPP chat messages.</li>
-    </ul>
-    <h2>Scripts</h2>
-    Device simulation scripts
-    <ul>
-      <li><a href="https://github.com/exosite-garage/provision_examples">Device Provisioning and Management</a> - Python scripts demonstrating how to provision and manage devices with the Provision API.</li>
-      <li><a href="https://github.com/exosite-garage/python_helloworld">TCP Read and Write</a> - Python script that uses the simple HTTP data interface to read and write data.</li>
-      <li><a href="https://github.com/exosite-garage/udp_single_shot">UDP Write</a> - Python script that uses the UDP single shot API to write data.</li>
-    </ul>
-    Helper scripts
-    <ul>
-      <li><a href="https://github.com/exosite-garage/archive_data">Archive Data</a> - Python app that archives data in date range to a .csv file.  Download data from the cloud.</li>
-    </ul>
-    Portal widget scripts
-    <ul>
-      <li><a href="https://github.com/exosite-garage/custom_widget_scripts">Custom Widget Scripts</a> - JavaScript apps that uses user's data from the cloud to represent it in a number of different ways.</li>
-    </ul>    
+      <li><a href="https://github.com/exosite-garage/pc_chronos_gateway">PC Chronos Gateway</a> </br>Runs on a PC and monitors a Texas Instruments Chronos watch via a CC1111 USB AP.  Logs accelerometer and button data to Exosite.</li>
+      <li><a href="https://github.com/exosite-garage/cc1111_chronos_uartgw">CC1111 Chronos Gateway</a> </br>Firmware for a CC1111 chip that monitors a Chronos watch RF link and sends data out over CC1111 UART.</li>
+      <li><a href="https://github.com/exosite-garage/janus_http_gateway">Janus HTTP Gateway</a> </br>Python code that runs in a Telit cell (GSM) chip on a Janus gateway to send UART data to Exosite.</li>
+      <li><a href="https://github.com/exosite-garage/xmpp_hello">XMPP Hello</a> - PC app that uses Exosite's XMPP chat API to send "hello world" message to Exosite.</li>
+      <li><a href="https://github.com/exosite-garage/pc_xmpp_cpumon">PC XMPP CPU Monitor</a> - Monitors a PC's CPU activity and logs to Exosite using XMPP chat messages.</li>
+    </ul> 
   </div>
 
-  <div class="footer">
-    <div class="leftcol">
-      <table style="margin-bottom:0;">
+    <div class="gitinfo">
+    <div class="footer">
+      <h2>Our github organizations:</h2>
+      <table style="margin-bottom:0;margin-top:0;">
         <tbody>
-          <th colspan="2">Our github organizations:</th>
-          <tr><td><strong>Examples</strong></td><td>:: <a class="highlight" href="http://github.com/exosite-garage">exosite-garage</a></td></tr>
-          <tr><td><strong>Libraries</strong></td><td>:: <a class="highlight" href="http://github.com/exosite-labs">exosite-labs</a></td></tr>
-          <tr><td><strong>Core FOSS</strong></td><td>:: <a class="highlight" href="http://github.com/exosite">exosite</a></td></tr>
+          <tr><td><a  href="http://github.com/exosite-garage">exosite-garage</a></td> <td>- Reference Code, Hardware Platform Projects, Examples</td></tr>
+          <tr><td><a  href="http://github.com/exosite-labs">exosite-labs</a></td><td>- Libraries</td></tr>
+          <tr><td><a  href="http://github.com/exosite">exosite</a></td><td>- Core Tech</td></tr>
         </tbody>
       </table>
       <a href="http://exosite.com"><img style="margin-left:1em;" src="images/logo_linear.png" alt="Exosite Logo"/></a></br>
     </div>
-    <div>
-      <table>
-        <tbody>
-          <th colspan="2">Keep in touch:</th>
-          <tr><td><strong>Blog</strong></td><td>:: <a class="highlight" href="http://exosite.com/blog/">exosite.com/blog</a></td></tr>
-          <tr><td><strong>Linked In</strong></td><td>:: <a class="highlight" href="http://www.linkedin.com/company/exosite/">linkedin.com/company/exosite</a></td></tr>
-          <tr><td><strong>Twitter</strong></td><td>:: <a class="highlight" href="http://twitter.com/exosite/">twitter.com/exosite</a></td></tr>
-          <tr><td><strong>Facebook</strong></td><td>:: <a class="highlight" href="http://www.facebook.com/pages/Exosite/166517043360541">facebook.com/exosite</a></td></tr>
-          <tr><td><strong>Developer Info</strong></td><td>:: <a class="highlight" href="http://exosite.com/developers/">exosite.com/developers</a></td></tr>
-        </tbody>
-      </table>
-    </div> 
-  </div> 
+  </div>
 
 </div>
 
-<img style="position: absolute; bottom: 0; right: 0; border: 0;z-index:50;" src="images/garage.png" alt="Exosite Technology Icon" />
+<!-- <img style="position: absolute; bottom: 0; right: 0; border: 0;z-index:50;" src="images/garage.png" alt="Exosite Technology Icon" /> -->
 
 </body>
 </html>
